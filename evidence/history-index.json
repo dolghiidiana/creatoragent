@@ -1,0 +1,41 @@
+{
+  "runs": [
+    {
+      "file": "recorded-v1.json",
+      "sha256": "16d896ed4ea6b9ee2cc25127be2311e4ff099f574fd94edf138b913396015328"
+    },
+    {
+      "file": "recorded-v2.json",
+      "sha256": "48ef68e18213c1dd90c0aa835a3d625f2ca6f65cd3f80a699bbb61be694e71a2"
+    },
+    {
+      "file": "recorded-v3.json",
+      "sha256": "93527218c313cc6270af60c07ee96001b59ca9e61cc87e7c5abd4246cada8146"
+    },
+    {
+      "file": "recorded-v4.json",
+      "sha256": "c498fea0e5174ae81006a1083cef4dfc17f352a0896be411249aaec4aa017999"
+    },
+    {
+      "file": "recorded-v5.json",
+      "sha256": "8a7a3b0b9b45552341c123f6d4775f55ebcc85c8a92ba9d6e3889e6df20d4920"
+    },
+    {
+      "file": "recorded-v6.json",
+      "sha256": "c6ad8dbef6a5b8530fedbfe5c39773e62fbf2ac58af564397c14c0c1d36a39cf"
+    },
+    {
+      "file": "recorded-v7.json",
+      "sha256": "b431c06ad93ad5ec1f7bdf60cd2b59c6e5c4d92a23e68dc56705ff4fc860bece"
+    },
+    {
+      "file": "recorded-v8.json",
+      "sha256": "44588a27de790daeab38e9fcd595ea374f73dfccc839cbbd6de874587558a3ef"
+    }
+  ],
+  "requests": 23,
+  "api_credit_usd": "0.00364890",
+  "stage_closed": true,
+  "unused_requests": 1,
+  "dashboard_post_v8": "pending; not freshly verified"
+}

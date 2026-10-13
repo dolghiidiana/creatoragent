@@ -1,0 +1,87 @@
+{
+  "version": "V6",
+  "projection": "content-preserving public subset; not original provider envelope",
+  "original_report_file_sha256": "0d0922b7af8f03c1938f2a4b2eca457ed9c0a5febe0e1e59e4d1f5ef95d0703f",
+  "manifest_hash": "b8497303b6656ce16c5a136795ecb2ce894862c63caa4d3ade7a74a97dca5300",
+  "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/",
+  "requests": 3,
+  "passes": 2,
+  "complete": false,
+  "recorded_stop_reason": "New semantic contract failure; stopped without retry",
+  "api_credit_usd": "0.00050868",
+  "responses": [
+    {
+      "slot": "fact-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "1bd0d50a12beb0e92898cfd501c767d90f178de39cf7b4ab83e092f2d1b9305b",
+      "raw_content": "\n{\n  \"label\": \"source_fact\",\n  \"answer\": \"twelve\",\n  \"source_refs\": [\"s1\"],\n  \"attribution\": null,\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 303,
+        "prompt_tokens": 552,
+        "total_tokens": 855,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v6-publication-support",
+        "comparison_policy": "short_text",
+        "raw_response_hash": "91745130518322cdd7822d509a801e8a54f1c7ad1c13ca645352610893199a86",
+        "surface_equivalent": false,
+        "outcome": "passed",
+        "raw_answer": "twelve",
+        "acceptance": "exact_match",
+        "validator_outcome": "passed"
+      }
+    },
+    {
+      "slot": "quote-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "cbda77679dc39f8f023a25e1f7a973457963011b05c467ae31fad486b3eb9953",
+      "raw_content": "\n{\n  \"label\": \"direct_quote\",\n  \"answer\": \"I felt calmer after my ten-minute walk.\",\n  \"source_refs\": [\"s2\"],\n  \"attribution\": \"fictional narrator\",\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 447,
+        "prompt_tokens": 564,
+        "total_tokens": 1011,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v6-publication-support",
+        "comparison_policy": "exact",
+        "raw_response_hash": "a80752a44fa2f9502871794f14473ac1b541d0b9206f6d9edf10970bfea243ce",
+        "surface_equivalent": false,
+        "outcome": "passed",
+        "raw_answer": "I felt calmer after my ten-minute walk.",
+        "acceptance": "exact_match",
+        "validator_outcome": "passed"
+      }
+    },
+    {
+      "slot": "demand-1",
+      "recorded_outcome": "content_failure",
+      "original_response_file_sha256": "9a559c4703bd62dcaab446aa57f8fc73893ce6109b9aef06ec053f773de2f5f3",
+      "raw_content": "\n{\n  \"label\": \"insufficient evidence\",\n  \"answer\": \"insufficient evidence\",\n  \"source_refs\": [\"s3\"],\n  \"attribution\": null,\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 952,
+        "prompt_tokens": 554,
+        "total_tokens": 1506,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v6-publication-support",
+        "comparison_policy": "short_text",
+        "raw_response_hash": "c03ca58cece6c564375d275d850f895fa0d977755885b1cf5a7a4d87a96e1633",
+        "surface_equivalent": false,
+        "outcome": "content_failure",
+        "raw_answer": "insufficient evidence",
+        "acceptance": "rejected",
+        "protected_field_mismatches": [
+          "label"
+        ],
+        "validator_outcome": "content_failure"
+      }
+    }
+  ]
+}

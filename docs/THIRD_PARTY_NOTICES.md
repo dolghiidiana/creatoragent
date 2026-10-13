@@ -1,0 +1,1 @@
+Software: MIT; see LICENSE. No model weights are redistributed. NVIDIA model and Nebius service terms remain separate from this software license. The original synthetic fixture contains no published-book excerpts. Recorded response projections omit provider reasoning and identifiers. No third-party endorsement is claimed.

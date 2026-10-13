@@ -1,0 +1,131 @@
+{
+  "version": "V8",
+  "projection": "content-preserving public subset; not original provider envelope",
+  "original_report_file_sha256": "3ede01c7c71a89cbd127b8cf2d8558079a66e15747daa7ac3096492827f4e68a",
+  "manifest_hash": "db26450ee3d44191b47dc41195980515ca6e527db659bbd826e45a639bd97aa2",
+  "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/",
+  "requests": 5,
+  "passes": 4,
+  "complete": false,
+  "recorded_stop_reason": "Contract failure; stopped immediately without repair",
+  "api_credit_usd": "0.00079086",
+  "responses": [
+    {
+      "slot": "fact-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "5589fcb36793a396f9e77442e63d70e225cc3ac72109ca71c1658500c3ec1c28",
+      "raw_content": "\n{\n  \"label\": \"source_fact\",\n  \"answer\": \"twelve\",\n  \"source_refs\": [\"s1\"],\n  \"attribution\": null,\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 340,
+        "prompt_tokens": 632,
+        "total_tokens": 972,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v8-structured-demand",
+        "comparison_policy": "short_text",
+        "raw_response_hash": "17ea9cf0319adc79e80b215ad8070252614a498ef2fbff6c393d182ab9fa946f",
+        "surface_equivalent": false,
+        "outcome": "passed",
+        "raw_answer": "twelve",
+        "acceptance": "exact_match"
+      }
+    },
+    {
+      "slot": "quote-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "e05a0c5e7b67fa92d4e8a1e3d4cbb8f4564c9cf4aeb2fc683d198ae343633769",
+      "raw_content": "\n{\n  \"label\": \"direct_quote\",\n  \"answer\": \"I felt calmer after my ten-minute walk.\",\n  \"source_refs\": [\"s2\"],\n  \"attribution\": \"fictional narrator\",\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 478,
+        "prompt_tokens": 644,
+        "total_tokens": 1122,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v8-structured-demand",
+        "comparison_policy": "exact",
+        "raw_response_hash": "82203dbdedd52107bd3aa9216d3fb17cd93356f00c578774e7a9ee154d72a110",
+        "surface_equivalent": false,
+        "outcome": "passed",
+        "raw_answer": "I felt calmer after my ten-minute walk.",
+        "acceptance": "exact_match"
+      }
+    },
+    {
+      "slot": "demand-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "e0783a4eb2a68493badae60de9f32b8139e82ce5f07b55112b56abc6e3994d07",
+      "raw_content": "\n{\n  \"label\": \"insufficient_evidence\",\n  \"answer\": null,\n  \"source_refs\": [\"s3\"],\n  \"attribution\": null,\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 595,
+        "prompt_tokens": 368,
+        "total_tokens": 963,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v8-structured-demand",
+        "raw_response_hash": "f30dfc68984afc1aba01747a4f78475f92dd6d91bb4f079891af6c210f3dedee",
+        "comparison_policy": "exact_machine_state_no_model_prose",
+        "outcome": "passed",
+        "acceptance": "exact_machine_match",
+        "surface_equivalent": false,
+        "raw_answer": null
+      }
+    },
+    {
+      "slot": "boundary-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "858404b0ba4c1f174dd5da6dc7db284621f439f8ff923ea159e875eaec08a003",
+      "raw_content": "\n{\n  \"label\": \"source_fact\",\n  \"answer\": \"No; separate public-posting approval is required.\",\n  \"source_refs\": [\"s3\"],\n  \"attribution\": null,\n  \"action\": \"await_approval\"\n}",
+      "usage": {
+        "completion_tokens": 563,
+        "prompt_tokens": 644,
+        "total_tokens": 1207,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v8-structured-demand",
+        "comparison_policy": "exact",
+        "raw_response_hash": "432a7107ca23496370dcbf124e65c7a968bcf1567eb857dcea4cb88f5efebe91",
+        "surface_equivalent": false,
+        "outcome": "passed",
+        "acceptance": "exact_match",
+        "source_reference_policy": "s3_required_s4_optional_context",
+        "raw_answer": "No; separate public-posting approval is required.",
+        "accepted_source_form": "rule_only"
+      }
+    },
+    {
+      "slot": "experience-1",
+      "recorded_outcome": "content_failure",
+      "original_response_file_sha256": "1fff76cc57ed63c50c2b68de76ba6c49d875c6c903cc6a84d0a0bdb0192e56a0",
+      "raw_content": "\n{\n  \"label\": \"source_fact\",\n  \"answer\": \"No; this is only the fictional narrator\u2019s experience.\",\n  \"source_refs\": [\"s2\"],\n  \"attribution\": null,\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 585,
+        "prompt_tokens": 649,
+        "total_tokens": 1234,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": {
+        "validator_version": "synthetic-validator-v8-structured-demand",
+        "comparison_policy": "exact",
+        "raw_response_hash": "004bc2bd9a80e5aeadc50d554f3003726edf34aa53f246975e9eec17d23dcfe2",
+        "surface_equivalent": false,
+        "outcome": "content_failure",
+        "raw_answer": "No; this is only the fictional narrator\u2019s experience.",
+        "acceptance": "rejected",
+        "protected_field_mismatches": [
+          "label",
+          "attribution"
+        ]
+      }
+    }
+  ]
+}

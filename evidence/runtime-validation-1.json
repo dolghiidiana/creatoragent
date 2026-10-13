@@ -1,0 +1,96 @@
+{
+  "projection": "public-safe subset of an earlier client-observed live runtime receipt; not the original provider envelope",
+  "runtime": {
+    "version": "competition-runtime-worker-1",
+    "mode": "LIVE_NEBIUS",
+    "endpoint": "https://api.tokenfactory.nebius.com/v1/",
+    "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+    "payload_hash": "dea1c1da6a992a4dcd318c2af3bde29fc540681393b1d8fea05dba3897d8b889",
+    "context_hash": "9f16421999ce7cb5f6a9edad2e80c565240eec0a65879f6e6da116c983cf8ae2",
+    "metadata": {
+      "action": "local_only",
+      "attribution": null,
+      "epistemic_status": "statement_in_fictional_source_not_external_verification",
+      "label": "source_fact",
+      "origin": "application_owned_reviewed_metadata",
+      "permissions": {
+        "cloud_disclosure": "requires_exact_new_consent",
+        "local_preparation": true,
+        "public_execution": false
+      },
+      "personal_report": false,
+      "reviewer": "synthetic_fixture_author",
+      "source_identity": "original-public-synthetic-v1:s1",
+      "source_refs": [
+        "s1"
+      ],
+      "source_sha256": "8c08be70a04cec86c8dda73c7a4e35fa2c0daca9baaef182097ce1d9063917f7",
+      "speaker": null,
+      "version": "competition-runtime-design-1"
+    },
+    "outcome": "passed",
+    "credit_usd": "0.00012984",
+    "observed_at": 1791636661.5073256,
+    "raw_response_hash": "cfdbbe7db085e73302c0ecdc05d501d7a952570bc93532c70373aba0786e9ba9",
+    "proof": "client-observed runtime transport; not provider attestation",
+    "intent_binding_hash": "47941f9162af6b70e5ea4aca68c7eac8fb3312b0e6e59eebefb7c1ee460a51d9",
+    "usage": {
+      "prompt_tokens": 632,
+      "completion_tokens": 383,
+      "total_tokens": 1015
+    },
+    "answer": "twelve",
+    "acceptance": "exact_match",
+    "restart_rule": "reuse persisted validated receipt; no new request"
+  },
+  "tasks": [
+    {
+      "id": "competition-runtime-validation-1:local_review",
+      "state": "completed",
+      "reason": null
+    },
+    {
+      "id": "competition-runtime-validation-1:synthetic_evidence_audit",
+      "state": "completed",
+      "reason": null
+    }
+  ],
+  "restart": {
+    "before": {
+      "requests": 1,
+      "receipt_hash": "767f7a64e27a8b1e287c3ad5d833b474122c4ad1cbe7e99d02d8437c012fd203",
+      "tasks": [
+        {
+          "id": "competition-runtime-validation-1:local_review",
+          "state": "completed"
+        },
+        {
+          "id": "competition-runtime-validation-1:synthetic_evidence_audit",
+          "state": "completed"
+        }
+      ]
+    },
+    "after": {
+      "requests": 1,
+      "receipt_hash": "767f7a64e27a8b1e287c3ad5d833b474122c4ad1cbe7e99d02d8437c012fd203",
+      "tasks": [
+        {
+          "id": "competition-runtime-validation-1:local_review",
+          "state": "completed"
+        },
+        {
+          "id": "competition-runtime-validation-1:synthetic_evidence_audit",
+          "state": "completed"
+        }
+      ]
+    },
+    "reopened_database": true,
+    "transport_disabled": true,
+    "receipt_reused": true,
+    "additional_requests": 0
+  },
+  "billing": {
+    "post_v8": "reconciled",
+    "post_runtime": "pending"
+  }
+}

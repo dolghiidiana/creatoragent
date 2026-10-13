@@ -1,0 +1,57 @@
+{
+  "version": "V2",
+  "projection": "content-preserving public subset; not original provider envelope",
+  "original_report_file_sha256": "c21a88d20d7bb74055a805bab359eea3b1c9cd4dddde92672b9be0419a467e2a",
+  "manifest_hash": "604b010a41b21f90956a92ad5e6f6d5f6a38c853aabadd8479e89a6cd09fb7ea",
+  "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/",
+  "requests": 3,
+  "passes": 2,
+  "complete": false,
+  "recorded_stop_reason": "New semantic contract failure; stopped without retry",
+  "api_credit_usd": "0.00050718",
+  "responses": [
+    {
+      "slot": "fact-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "2922382bd1401c528ae56f4154c3901a597f3329b5e4fad49005bd64e7a01d7f",
+      "raw_content": "\n{\n  \"label\": \"source_fact\",\n  \"answer\": \"twelve\",\n  \"source_refs\": [\"s1\"],\n  \"attribution\": null,\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 408,
+        "prompt_tokens": 381,
+        "total_tokens": 789,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": null
+    },
+    {
+      "slot": "quote-1",
+      "recorded_outcome": "passed",
+      "original_response_file_sha256": "3469b239c55e6d57a7d3c50792e98539c811f3baba1aa8c4590c3523302f69dc",
+      "raw_content": "\n{\n  \"label\": \"direct_quote\",\n  \"answer\": \"I felt calmer after my ten-minute walk.\",\n  \"source_refs\": [\"s2\"],\n  \"attribution\": \"fictional narrator\",\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 549,
+        "prompt_tokens": 393,
+        "total_tokens": 942,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": null
+    },
+    {
+      "slot": "demand-1",
+      "recorded_outcome": "content_failure",
+      "original_response_file_sha256": "6878779aea9c76a34f363e7249dd49d27ad700386e506d25a7d6d452acdd5e97",
+      "raw_content": "\n{\n  \"label\": \"insufficient_evidence\",\n  \"answer\": \"insufficient evidence\",\n  \"source_refs\": [\"s3\"],\n  \"attribution\": null,\n  \"action\": \"await_approval\"\n}",
+      "usage": {
+        "completion_tokens": 867,
+        "prompt_tokens": 383,
+        "total_tokens": 1250,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": null
+    }
+  ]
+}

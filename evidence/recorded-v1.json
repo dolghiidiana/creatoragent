@@ -1,0 +1,29 @@
+{
+  "version": "V1",
+  "projection": "content-preserving public subset; not original provider envelope",
+  "original_report_file_sha256": "5fe692b8c0206191ae399b140baf11052f0c9120f0b8961db44d311a14e840a1",
+  "manifest_hash": "886df841c0172083cd4f2ef61f97ddca0744caed4a13ccb6626d26174562de32",
+  "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/",
+  "requests": 1,
+  "passes": 0,
+  "complete": false,
+  "recorded_stop_reason": "Content/contract failure; batch stopped for review",
+  "api_credit_usd": "0.00012654",
+  "responses": [
+    {
+      "slot": "fact-1",
+      "recorded_outcome": "content_failure",
+      "original_response_file_sha256": "c92f9cdb8c649d78e69fc7d1838c35a5bf81622929f549be88ca775a94b0cf58",
+      "raw_content": "\n{\n  \"label\": \"source_fact\",\n  \"answer\": \"twelve\",\n  \"source_refs\": [\"s1\"],\n  \"attribution\": \"source_fact\",\n  \"action\": \"local_only\"\n}",
+      "usage": {
+        "completion_tokens": 450,
+        "prompt_tokens": 309,
+        "total_tokens": 759,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "recorded_diagnostic": null
+    }
+  ]
+}

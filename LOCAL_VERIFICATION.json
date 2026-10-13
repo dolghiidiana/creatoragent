@@ -1,0 +1,14 @@
+{
+  "clean_copy_tests": "82 passed",
+  "restart_and_approval_walkthrough": "passed",
+  "network_interdiction": "socket creation blocked throughout walkthrough",
+  "competition_runtime_worker": "disabled gate and MOCK audit/local review passed",
+  "runtime_restart_reuses_receipt": "passed, including database reopen; one MOCK intent total",
+  "new_inference_requests": 0,
+  "new_credit_usage_usd": "0",
+  "history_regrading": false,
+  "release_files_verified": 62,
+  "post_v8_dashboard_reconciliation": "reconciled",
+  "post_runtime_dashboard_reconciliation": "pending",
+  "publication": "not performed"
+}
